@@ -27,10 +27,10 @@ export default function Home() {
                 <b>Dengan teknologi terkini, kami membantu Anda memahami kesehatan jantung dengan lebih mudah</b>
               </section>
               <section>
-                <Link href="#layanan">
-                  <button className="btn-primer1">Diagnosis Sekarang</button>
+                <Link href="/diagnosis">
+                  <Button className="btn-primer1">Diagnosis Sekarang</Button>
                 </Link>
-                <button className="btn-primer2">Pelajari Lebih Lanjut</button>
+                <Button className="btn-primer2">Pelajari Lebih Lanjut</Button>
               </section>
             </Col>
           </Row>
@@ -77,7 +77,9 @@ export default function Home() {
                       mengalami penyempitan atau penyumbatan.
                     </p>
                     <div className="w-100 text-center mt-5">
+                    <Link href="/penyakit-jantung">
                       <Button className="btn-second1 px-4">Informasi Lengkap </Button>
+                    </Link>
                     </div>
                   </div>
                 </div>
