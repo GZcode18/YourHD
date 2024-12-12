@@ -14,7 +14,7 @@ import {
   Button,
 } from "reactstrap";
 import Image from "next/image";
-// import LogoWhite from "/public/images/logos/logo.png";
+import LogoWhite from "/public/images/logos/logo.png";
 // import user1 from "public/images/users/user1.jpg";
 
 const Header = ({ showMobmenu, status }) => {
@@ -30,7 +30,7 @@ const Header = ({ showMobmenu, status }) => {
     <Navbar color="" dark expand="md" className='position-fixed'>
       <div className="d-flex align-items-center">
         <NavbarBrand href="/" className="d-lg-none">
-          {/* <Image src={LogoWhite} alt="logo" width={50} height={50} /> */}
+          <Image src={LogoWhite} alt="logo" width={50} height={50} />
         </NavbarBrand>
         <Button color="primary" className="d-lg-none" onClick={showMobmenu}>
           <i className="bi bi-list"></i>
@@ -52,15 +52,14 @@ const Header = ({ showMobmenu, status }) => {
       </div>
       <Collapse navbar isOpen={isOpen}>
         <Nav className="me-auto" navbar>
-          {/* <Image
+          <Image
             src={LogoWhite}
             alt="profile"
             className="rounded-circle"
             width={'100%'}
             height={60}
-          /> */}
+          />
           <div className="d-flex position-absolute w-100 justify-content-center gap-3 align-items-center m-auto h-100 top-0">
-            {status === "BeforeAuth" ? (
               <>
                 <NavItem>
                   <Link href="/" className="nav-link">
@@ -83,35 +82,6 @@ const Header = ({ showMobmenu, status }) => {
                   </Link>
                 </NavItem>
               </>
-            ) : (
-              <>
-                <NavItem>
-                  <Link href="/user" className="nav-link">
-                    Home
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <Link href="/user/#tentangBipoCare" className="nav-link">
-                    Tentang BipoCare
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <Link href="/user#layanan" className="nav-link">
-                    Layanan
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <Link href="/user/#footer" className="nav-link">
-                    Kontak
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <Link href="/user/#footer" className="nav-link">
-                    Terapi Suara
-                  </Link>
-                </NavItem>
-              </>
-            )}
 
             {/* <UncontrolledDropdown inNavbar nav>
               <DropdownToggle caret nav>
