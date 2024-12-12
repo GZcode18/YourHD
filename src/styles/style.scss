@@ -1,0 +1,354 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+@import "./layout/sidebar";
+@import "./layout/container";
+
+:root {
+  --primary-color: #a6011c;
+  --secondary-color: #0157a9;
+  --tertiary-color: #62825d;
+  --primary-light: #f6e6e8;
+  --gray-color: #b1b2af;
+}
+
+//template
+
+.text-primer {
+  color: var(--primary-color) !important;
+}
+
+.bg-primer {
+  background-color: var(--primary-color) !important;
+}
+
+.text-grey {
+  color: var(--gray-color);
+}
+
+.text-primer-light {
+  color: var(--primary-light) !important;
+}
+
+.bg-primer-light {
+  background-color: var(--primary-light) !important;
+}
+
+.bg-primer-linear {
+  background: linear-gradient(90deg, #0f8dc8 0%, #57afd9 100%);
+}
+
+.bg-primer-trp {
+  background: rgba(15, 141, 200, 0.32);
+}
+
+.bg-second-light {
+  background-color: #f2f9e8 !important;
+}
+
+.text-second {
+  color: var(--secondary-color) !important;
+}
+
+.text-tertiary {
+  color: var(--tertiary-color) !important;
+}
+
+.bg-second {
+  background-color: var(--secondary-color) !important;
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-color) !important;
+}
+
+.hover:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.text-second-hover:hover {
+  color: var(--secondary-color) !important;
+  -webkit-text-stroke: 0.1px black;
+}
+
+.hover-sm:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.hover-heading:hover {
+  color: var(--secondary-color) !important;
+  cursor: pointer !important;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-second1 {
+  background: linear-gradient(180deg, #0157a9 29.09%, #014687 104.55%);
+  border: none;
+  color: #fff;
+}
+
+.btn-second2 {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color) !important;
+  background-color: transparent !important;
+}
+
+.btn-second-disable {
+  background: #cbe6a4;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-primer1 {
+  background: linear-gradient(177.61deg, #a6011c 2.01%, #740114 80.55%);
+  border: none;
+  color: #fff;
+}
+
+.btn-primer1:hover,
+.btn-primer2:hover,
+.btn-second1:hover,
+.btn-second2:hover,
+.btn-tertiary1:hover,
+.btn-tertiary:hover {
+  transform: scale(1.1);
+}
+
+.btn-primer2 {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color) !important;
+  background-color: transparent !important;
+}
+
+.btn-tertiary {
+  background: var(--tertiary-color);
+  border: none;
+  color: #fff;
+}
+
+.btn-tertiary1 {
+  background: linear-gradient(180deg, #0f8dc8 24.29%, #0c71a0 100%);
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+
+.border-primer {
+  border-color: var(--primary-color) !important;
+}
+
+.border-second {
+  border-color: var(--secondary-color) !important;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.h-fit {
+  height: fit-content !important;
+}
+
+.w-fit {
+  width: fit-content !important;
+}
+
+.dashed-hr {
+  border: none;
+  border-top: 2px dashed #000;
+  margin: 10px 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.cardUsers,
+.cardUsers .cardbody {
+  box-shadow: none !important;
+  border: 0;
+  padding: 0 !important;
+}
+
+.card-polos {
+  box-shadow: none;
+  border: 0;
+}
+
+//template
+
+// navbar start
+
+.navbar {
+  height: 8vh;
+  // position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.navbaradmin {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+nav .nav-link {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav .nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+nav button {
+  // background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
+nav button:hover {
+  transform: scale(1.08);
+}
+
+// navbar end
+
+//DashboardUser start
+
+.first h1 {
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.first b {
+  font-size: 20px;
+  color: #000;
+  width: 75%;
+  font-weight: 400;
+}
+
+.first button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.first .fisrtImg {
+  width: 100%;
+  height: 70%;
+  z-index: 9;
+}
+
+.first .bula {
+  position: absolute;
+  // z-index: 99;
+  top: -40%;
+  left: -40%;
+}
+
+.first,
+.second,
+.third {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
+  padding: 50px 30px;
+  position: relative;
+}
+
+.second p,
+.second ul {
+  line-height: 30px;
+}
+
+.second .secondimg {
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  width: 40%;
+  height: 60%;
+}
+
+.second .bipolarimg {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 30%;
+  height: 70%;
+}
+
+.second .bulat {
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.third .card{
+    width: 25rem !important;
+    // height: 400px;
+    flex: 0 0 auto;
+    margin: auto 10px;
+}
+
+.third p {
+  color: var(--gray-color);
+}
+
+.third a {
+  text-decoration: underline;
+  color: var(--gray-color);
+}
+
+.third h4 {
+  color: var(--secondary-color);
+}
+
+//DashboardUser end
