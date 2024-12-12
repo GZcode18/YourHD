@@ -2,7 +2,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 import Header from "../layouts/header/Header";
-import Sidebar from "../layouts/sidebars/vertical/Sidebar";
+// import Sidebar from "../layouts/sidebars/vertical/Sidebar";
 
 const FullLayout = ({ children }) => {
   const [open, setOpen] = React.useState(false);
