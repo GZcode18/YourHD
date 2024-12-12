@@ -6,11 +6,7 @@ import firstbg from "/public/images/background/firstbg.png";
 import Header from "./layouts/header/Header";
 import secondbg from "/public/images/background/kesehatanJ.png";
 import gambarAbout from "/public/images/background/gambarAbout.png";
-// import bulat1 from "/public/images/bg/bulat1.png";
-// import bulat2 from "/public/images/bg/bulat2.png";
 import bulatGiant from "/public/images/bg/bulatGiant.png";
-// import Header from "./layouts/header/Header";
-// import Footer from "./layouts/footer/Footer";
 
 
 export default function Home() {
