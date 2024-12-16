@@ -35,11 +35,16 @@
 }
 
 .bg-primer-linear {
-  background: linear-gradient(90deg, #0f8dc8 0%, #57afd9 100%);
+  background: linear-gradient(
+    90deg,
+    #a6011c 29.6%,
+    #b12139 54.69%,
+    #c14d60 89.42%
+  );
 }
 
 .bg-primer-trp {
-  background: rgba(15, 141, 200, 0.32);
+  background: rgba(000, 000, 000, 0.4);
 }
 
 .bg-second-light {
@@ -394,3 +399,54 @@ nav button:hover {
 }
 
 //DashboardUser end
+
+//admin start
+
+.admin{
+    padding-top: 10px;
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  left: 0;
+  width: 25%;
+}
+
+.wrapper .sidebar a {
+  width: 100% !important;
+}
+
+.wrapper .sidebar button {
+  border: none;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: start;
+  font-weight: bold;
+  width: 100%;
+}
+
+.wrapper .sidebar svg,
+.wrapper .sidebar img {
+  margin-right: 10px;
+}
+
+.wrapper .sidebar button.active {
+  background-color: var(--primary-color); /* Warna biru */
+  color: #fff; /* Warna teks putih */
+}
+
+.wrapper .sidebar button.active svg {
+  color: #fff; /* Warna teks putih */
+  fill: #ffffff !important;
+}
+
+.wrapper .sidebar button:hover {
+  background-color: var(--primary-light); /* Biru lebih gelap saat hover */
+}
+
+//admin end
