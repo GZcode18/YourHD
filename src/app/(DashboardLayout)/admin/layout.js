@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Button, Col, Container, Row } from "reactstrap";
 import Image from "next/image";
 import LogoWhite from "/public/images/logos/logo.png";
@@ -107,7 +107,9 @@ const FullLayout = ({ children }) => {
                 <Col lg='9' md='12' sm='12' xs='12' className="p-0 m-0">
                   <div className="main-content-wrapper">
                     <HeaderAdmin showMobmenu={() => showMobilemenu()} />
-                    {children}
+                    <Suspense fallback={<div>Loading...</div>}>
+                      {children}
+                    </Suspense>
                   </div>
                 </Col>
               </Row>
