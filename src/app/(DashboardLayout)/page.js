@@ -7,6 +7,7 @@ import Header from "./layouts/header/Header";
 import secondbg from "/public/images/background/kesehatanJ.png";
 import gambarAbout from "/public/images/background/gambarAbout.png";
 import bulatGiant from "/public/images/bg/bulatGiant.png";
+import Footer from "./layouts/footer/Footer";
 
 
 export default function Home() {
@@ -141,7 +142,7 @@ export default function Home() {
           </div>
           {/* <Image className="bulat" src={bulat2} width={'100%'} height={'100%'} alt="elips" style={{ right: '0', left: '97%', top: '70%' }} /> */}
         </section>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

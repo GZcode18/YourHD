@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Col, Container, Row } from "reactstrap";
 import Image from "next/image";
 import LogoWhite from "/public/images/logos/logo.png";
@@ -26,10 +26,19 @@ const FullLayout = ({ children }) => {
   let select;
   const [activeButton, setActiveButton] = useState("dashboard");
 
+  useEffect(() => {
+    const savedButton = localStorage.getItem("activeButton");
+    if (savedButton) {
+      setActiveButton(savedButton);
+    }
+  }, []);
+
+  // Handle tombol diklik
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
-    select = buttonName;
+    localStorage.setItem("activeButton", buttonName); // Simpan nilai di localStorage
   };
+
 
   return (
     <main>
